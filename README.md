@@ -7,6 +7,7 @@ ps5 pup decrypt by asking nicely ps5 to do it.
 * LeGend: for assistance on testing
 * Scene-Collective/l0lhax/idc: for original code
 * Anonymous: For help in getting the required coolstuff to reverse the protocol
+* LemonHaze: For RE help
 
 ## Usage:
 
