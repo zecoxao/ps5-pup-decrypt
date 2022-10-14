@@ -15,3 +15,5 @@ place your ps5 update file in /mnt/usb0/safe.PS5UPDATE.PUP (this is root of your
 plug the pendrive to the ps5.
 
 let it do its thing (warning: this requires elevated privileges for most packages!)
+
+either one or two files will be produced (PS5UPDATE1.PUP.dec and PS5UPDATE2.PUP.dec) depending on what file you have (sys or recovery)
