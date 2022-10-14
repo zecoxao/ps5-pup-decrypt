@@ -21,4 +21,5 @@ either one or two files will be produced (PS5UPDATE1.PUP.dec and PS5UPDATE2.PUP.
 ## Requirements
 
 Ubuntu 20.04 with gcc (or WSL alternative)
+
 make
