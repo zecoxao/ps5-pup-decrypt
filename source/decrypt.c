@@ -258,7 +258,8 @@ int decrypt_segment_blocks(const decrypt_state * state, uint16_t index, pup_segm
     {
       int errcode = errno;
       printfsocket("  Failed to decrypt block for segment #%d! Error: %d (%s)\n", index, errcode, f_strerror(errcode));
-      goto end;
+      result = 0;
+      //goto end;
     }
 
     ssize_t byteswritten = writebytes(state, SeekTo, read_size, block_buffer, block_size);
