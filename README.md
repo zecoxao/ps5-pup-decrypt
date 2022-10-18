@@ -9,7 +9,7 @@ ps5 pup decrypt by asking nicely ps5 to do it.
 * Anonymous: For help in getting the required coolstuff to reverse the protocol
 * LemonHaze: For RE help
 
-## Usage:
+## Usage
 
 place your ps5 update file in /mnt/usb0/safe.PS5UPDATE.PUP (this is root of your pendrive, file safe.PS5UPDATE.PUP)
 
@@ -21,6 +21,6 @@ either one or two files will be produced (PS5UPDATE1.PUP.dec and PS5UPDATE2.PUP.
 
 ## Requirements
 
-Ubuntu 20.04 with gcc (or WSL alternative)
+- Ubuntu 20.04 with ``gcc (or WSL alternative)``
 
-make
+- make
