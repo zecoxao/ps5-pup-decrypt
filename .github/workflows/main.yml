@@ -1,0 +1,35 @@
+---
+name: "Build"
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Environment
+        run: |
+          git clone https://github.com/Creeeeger/ps5-pup-decrypt.git
+          cd ps5-pup-decrypt
+          sudo apt-get install make gcc gdb gcc-7
+          chmod +rwx Makefile
+          
+      - name: Build Unpacker
+        run: |
+          make
+          
+      - name: Upload Binary Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          path: |
+            ./*.elf
