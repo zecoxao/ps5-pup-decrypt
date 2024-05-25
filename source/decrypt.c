@@ -195,6 +195,7 @@ int decrypt_segment_blocks(const decrypt_state * state, uint16_t index, pup_segm
 
   size_t remaining_size = segment->compressed_size;
   int last_index = block_count - 1;
+  const uint32_t mask = (segment->flags2 & 1) ? 0x1ff : 0xf;
   for (int i = 0; i < block_count; i++)
   {
     printfsocket("  Decrypting block %d/%d...\n", i, block_count);
@@ -211,7 +212,7 @@ int decrypt_segment_blocks(const decrypt_state * state, uint16_t index, pup_segm
     if (is_compressed == 1)
     {
       pup_block_info* tblock_info = &block_info[i];
-      uint32_t unpadded_size = (tblock_info->size & ~0xFu) - (tblock_info->size & 0xFu);
+      uint32_t unpadded_size = (tblock_info->size & ~mask) - (tblock_info->size & mask);
 
       read_size = block_size;
       if (unpadded_size != block_size)
@@ -219,7 +220,7 @@ int decrypt_segment_blocks(const decrypt_state * state, uint16_t index, pup_segm
         read_size = tblock_info->size;
         if (i != last_index || tail_size != tblock_info->size)
         {
-          read_size &= ~0xFu;
+          read_size &= ~mask;
         }
       }
 

@@ -26,6 +26,7 @@ pup_header;
 typedef struct _pup_segment
 {
   uint32_t flags;
+  uint32_t flags2;
   ssize_t offset;
   size_t compressed_size;
   size_t uncompressed_size;
