@@ -27,4 +27,4 @@ either one or two files will be produced (PS5UPDATE1.PUP.dec and PS5UPDATE2.PUP.
 
 ## Actions
 
-[[https://github.com/zecoxao/ps5-pup-decrypt/actions/]]
+https://github.com/zecoxao/ps5-pup-decrypt/actions/
