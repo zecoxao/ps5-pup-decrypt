@@ -76,7 +76,7 @@ int decrypt_segment(const decrypt_state* state, uint16_t index, pup_segment* seg
 {
   int result = -1;
 
-  uint8_t* buffer = buffer = f_memalign(0x4000, segment->compressed_size);
+  uint8_t* buffer = f_memalign(0x4000, segment->compressed_size);
 
   int is_compressed = (segment->flags & 8) != 0 ? 1 : 0;
 
