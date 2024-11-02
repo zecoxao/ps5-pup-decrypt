@@ -1,5 +1,5 @@
-CC      := gcc
-AS      := gcc
+CC      := gcc-9
+AS      := gcc-9
 ODIR    := build
 SDIR    := source
 IDIRS   := -I. -Iinclude
