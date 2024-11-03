@@ -130,7 +130,7 @@ int payload_main(struct payload_args *args) {
 	f_sceNetSetsockopt(sock, IPPROTO_TCP, TCP_NODELAY, (char *)&flag, sizeof(int));
 
 	//Output paths must already exist!
-	decrypt_pups("/mnt/usb0/safe.PROSPEROUPDATE.PUP", "/mnt/usb0/%s.dec");
+	decrypt_pups("/mnt/usb0/safe.PS5UPDATE.PUP", "/mnt/usb0/%s.dec");
 
 	printf_notification("Complete!");
   
