@@ -471,10 +471,10 @@ void decrypt_pup(decrypt_state * state, const char * OutputPath)
 
   const char * name = state->entryname;
 
-  if (f_strcmp(name, "PS5UPDATE1.PUP") == 0)
+  if (f_strcmp(name, "PROSPEROUPDATE1.PUP") == 0)
     state->pup_type = 1;
 
-  if (f_strcmp(name, "PS5UPDATE2.PUP") == 0)
+  if (f_strcmp(name, "PROSPEROUPDATE2.PUP") == 0)
     state->pup_type = 0;
 
   if (state->pup_type < 0)
