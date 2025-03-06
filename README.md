@@ -28,3 +28,13 @@ either one or two files will be produced (PS5UPDATE1.PUP.dec and PS5UPDATE2.PUP.
 ## Actions
 
 https://github.com/zecoxao/ps5-pup-decrypt/actions/
+
+## Not Decrypted Files (system, system_ex, wlan)
+
+it will only work on pups that are on:
+
+- same version: e.g (5.00 on 5.00 pup)
+
+- bigger versions but of the same .XX: e.g (5.02 on 5.50 pup, but NOT 6.00 pup)
+
+for ssd0 system ssd0 system_ex AND wlan
