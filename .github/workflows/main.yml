@@ -35,7 +35,7 @@ jobs:
         subject-path: ./ps5_pup_decrypt.elf
 
     - name: Upload
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: ps5-pup-decrypt
         path: ./ps5_pup_decrypt.elf
